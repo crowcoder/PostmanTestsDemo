@@ -5216,6 +5216,20 @@
 				},
 				{
 					"name": "Latest Launch",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4a95df71-c3d2-4aee-8710-20bd0d7e69be",
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"no chance this is there\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
