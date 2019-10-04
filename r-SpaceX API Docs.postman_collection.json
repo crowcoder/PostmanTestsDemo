@@ -4898,6 +4898,20 @@
 				},
 				{
 					"name": "Upcoming Launches",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "036a2c9f-ed96-4e7a-9351-b0be1c0e6457",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
